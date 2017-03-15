@@ -10,14 +10,15 @@ package tictactoe;
  * @author 2005988
  */
 import java.util.Scanner;
-public class TicTacToe {
+public class TicTacToe{
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         
-        Player x=new Player();
+        Player one =new Player("x");
+        Player two = new Player("o");
     }
     
 }

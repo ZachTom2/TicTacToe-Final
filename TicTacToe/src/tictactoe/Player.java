@@ -9,6 +9,9 @@ package tictactoe;
  *
  * @author Robbie
  */
-public class Player {
-    
-}
+public class Player extends Board
+{
+    public Player(String x) {
+        
+    }
+    }
