@@ -16,7 +16,11 @@ public class TicTacToe {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+<<<<<<< HEAD
         //robbie is the best student ever
+=======
+        //more stuff
+>>>>>>> master
     }
     
 }
