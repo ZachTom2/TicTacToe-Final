@@ -4,14 +4,15 @@
  * and open the template in the editor.
  */
 package tictactoe;
-
+import java.util.Scanner;
 /**
  *
  * @author Robbie
  */
-public class Player extends Board
+public class Player
 {
-    public Player(String x) {
-        
+String xOro;
+    public Player() {
+        this.xOro = xOrO.nextLine();
     }
-    }
+}

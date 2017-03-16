@@ -11,14 +11,18 @@ package tictactoe;
  */
 import java.util.Scanner;
 public class TicTacToe{
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        
-        Player one =new Player("x");
-        Player two = new Player("o");
+        String xOro;
+        Player one =new Player();
+        Player two = new Player();
+        Scanner input = new Scanner(System.in);
+        System.out.println("Do you want to be x or o?: ");
+        xOro=input.nextLine();
     }
-    
 }
+
+
+
+        
+
+        
