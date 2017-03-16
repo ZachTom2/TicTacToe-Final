@@ -12,13 +12,17 @@ package tictactoe;
 import java.util.Scanner;
 public class TicTacToe{
 
-    /**
-     * @param args the command line arguments
-     */
+    Scanner scan=new Scanner(System.in);
     public static void main(String[] args) {
+        
         
         Player one =new Player("x");
         Player two = new Player("o");
+    }
+    public void createPlayer(player x){
+        System.out.println("X or Y?");
+        String temp=scan.next();
+        Player x =new Player(temp);
     }
     
 }
