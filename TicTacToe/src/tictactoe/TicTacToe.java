@@ -11,31 +11,29 @@ package tictactoe;
  */
 import java.util.Scanner;
 public class TicTacToe{
-<<<<<<< HEAD
     public static void main(String[] args) {
-        String xOro;
-        Player one =new Player();
-        Player two = new Player();
+        String xOro=null;
         Scanner input = new Scanner(System.in);
-        System.out.println("Do you want to be x or o?: ");
-        xOro=input.nextLine();
-    }
-=======
-
-    Scanner scan=new Scanner(System.in);
-    public static void main(String[] args) {
+        while (xOro!="X"||xOro!="O"){
+            System.out.println("Do you want to be x or o?: ");
+            xOro=input.nextLine();
+            xOro.toUpperCase();
+            if (xOro!="X"||xOro!="O"){
+                System.out.println("Must be an x or o");
+            }
+        }  
+        Player one =new Player(xOro);
+        System.out.println("Player One is "+ xOro);
+        if (xOro.equals("X")){
+            Player two = new Player("O");
+            System.out.println("Player Two is O");
+        }
+        else {
+            Player two = new Player("X");
+            System.out.println("Player Two is X");
+        }
         
-        
-        Player one =new Player("x");
-        Player two = new Player("o");
     }
-    public void createPlayer(player x){
-        System.out.println("X or Y?");
-        String temp=scan.next();
-        Player x =new Player(temp);
-    }
-    
->>>>>>> origin/Solution
 }
 
 
