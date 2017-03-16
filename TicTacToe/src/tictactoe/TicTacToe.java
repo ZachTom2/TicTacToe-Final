@@ -11,7 +11,6 @@ package tictactoe;
  */
 import java.util.Scanner;
 public class TicTacToe{
-<<<<<<< HEAD
     public static void main(String[] args) {
         String xOro;
         Player one =new Player();
@@ -19,26 +18,9 @@ public class TicTacToe{
         Scanner input = new Scanner(System.in);
         System.out.println("Do you want to be x or o?: ");
         xOro=input.nextLine();
-    }
-=======
-
-    Scanner scan=new Scanner(System.in);
-    public static void main(String[] args) {
         
-        
-        Player one =new Player("x");
-        Player two = new Player("o");
     }
-    public void createPlayer(player x){
-        System.out.println("X or Y?");
-        String temp=scan.next();
-        Player x =new Player(temp);
-    }
-    
->>>>>>> origin/Solution
 }
-
-
 
         
 
