@@ -23,5 +23,5 @@ public abstract class Board {
     }
     abstract void placeX();
     abstract void placeO();
-    abstract String checkWin();
+    abstract boolean checkWin();
 }
