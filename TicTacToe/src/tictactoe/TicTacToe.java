@@ -36,7 +36,12 @@ public class TicTacToe{
             Player two = new Player("X");
             System.out.println("Player Two is X");
         }
+<<<<<<< Updated upstream
 >>>>>>> origin/Solution
+=======
+        one.play();
+        
+>>>>>>> Stashed changes
         
     }
 }
