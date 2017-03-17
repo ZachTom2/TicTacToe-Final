@@ -14,10 +14,8 @@ public class TicTacToe{
     public static void main(String[] args) {
         String xOro=null;
         Scanner input = new Scanner(System.in);
-<<<<<<< HEAD
         System.out.println("Do you want to be x or o?: ");
         xOro=input.nextLine();
-=======
         while (xOro!="X"||xOro!="O"){
             System.out.println("Do you want to be x or o?: ");
             xOro=input.nextLine();
@@ -36,12 +34,7 @@ public class TicTacToe{
             Player two = new Player("X");
             System.out.println("Player Two is X");
         }
-<<<<<<< Updated upstream
->>>>>>> origin/Solution
-=======
-        one.play();
-        
->>>>>>> Stashed changes
+        play(one,two);
         
     }
 }
