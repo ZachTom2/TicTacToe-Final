@@ -16,10 +16,13 @@ String xOro;
     public Player(String xOro) {
         this.xOro = xOro;
 }
-    public void placeX(int r, int c) {
-        board[r][c] = "X";
-    }
-    public void placeO(int r, int c) {
+    Scanner scan =new Scanner(System.in);
+    public void place(Player a){
+        System.out.println("Which column do you want to place your " +a.xOro+" in ?");
+        int c= scan.nextInt();
+         System.out.println("Which row do you want to place your " +a.xOro+" in ?");
+        int r= scan.nextInt();
+        board[c][r]=a.xOro;
     }
     public String checkWin(String winner) {
         return winner;

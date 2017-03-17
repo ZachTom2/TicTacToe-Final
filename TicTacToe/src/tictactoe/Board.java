@@ -21,7 +21,6 @@ public abstract class Board {
         }
         
     }
-    abstract void placeX();
-    abstract void placeO();
+    abstract void place();
     abstract boolean checkWin();
 }
