@@ -10,13 +10,26 @@ package tictactoe;
  *
  * @author Robbie
  */
-public class Player extends Board
-{
+public class Player extends Board {
 String xOro;
     public Player(String xOro) {
         this.xOro = xOro;
 }
     Scanner scan =new Scanner(System.in);
+    public String play(Player a, Player b){
+        if (checkWin()!=true){
+            place(a);
+        }
+        if (checkWin()!=true){
+            place(b);
+        }
+        if (checkWin()!=true){
+            play(a,b);
+        }
+        if (checkWin()==true){
+            return whoWon(a,b).xOro+ " Wins!";
+        }
+        }
     public void place(Player a){
         System.out.println("Which column do you want to place your " +a.xOro+" in ?");
         int c= scan.nextInt();
@@ -24,7 +37,10 @@ String xOro;
         int r= scan.nextInt();
         board[c][r]=a.xOro;
     }
-    public String checkWin(String winner) {
-        return winner;
+    public boolean checkWin() {
+        return true;
     }
+    public Player whoWon(Player a, Player b){
+        
     }
+}
