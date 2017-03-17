@@ -12,9 +12,7 @@ package tictactoe;
 import java.util.Scanner;
 public class TicTacToe{
     public static void main(String[] args) {
-<<<<<<< HEAD
         // TODO code application logic here
-=======
         String xOro=null;
         Scanner input = new Scanner(System.in);
         System.out.println("Do you want to be x or o?: ");
@@ -38,8 +36,6 @@ public class TicTacToe{
             System.out.println("Player Two is X");
         }
         play(one,two);
-        
->>>>>>> origin/Solution
     }
 }
 
